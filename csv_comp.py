@@ -2,7 +2,7 @@
 import csv
 
 #def report_csv():
-with open('known_issues.csv.csv', 'r') as t1, open('new_report.csv', 'r') as t2:
+with open('known_issues.csv', 'r') as t1, open('new_report.csv', 'r') as t2:
     fileone = t1.readlines()
     filetwo = t2.readlines()
 
