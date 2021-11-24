@@ -2,14 +2,14 @@
 import csv
 
 #def report_csv():
-with open('old_report.csv', 'r') as t1, open('new_report.csv', 'r') as t2:
+with open('known_issues.csv.csv', 'r') as t1, open('new_report.csv', 'r') as t2:
     fileone = t1.readlines()
     filetwo = t2.readlines()
 
 def get_update(file_1, file_2):
     global tc_list, tc_count
     tc_list = []
-    with open('update.csv', 'w') as outFile:
+    with open('unknown_issues.csv', 'w') as outFile:
         for line in filetwo:
             if line not in fileone:
                 tc_list.append(line)
